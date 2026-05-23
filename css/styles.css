@@ -75,8 +75,21 @@ a {
   font-weight: 700;
 }
 
+.logo-wordmark {
+  display: block;
+  width: auto;
+  height: 1.35rem;
+  max-width: min(42vw, 11rem);
+  object-fit: contain;
+}
+
+.logo-wordmark--footer {
+  height: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
 .logo-mark {
-  display: grid;
+  display: none;
   place-items: center;
   width: 2.5rem;
   height: 2.5rem;
@@ -88,6 +101,7 @@ a {
 }
 
 .logo-text {
+  display: none;
   font-family: "Fraunces", Georgia, serif;
   font-size: 1.15rem;
 }
@@ -314,8 +328,7 @@ body:has(.hero--video) .site-header {
   border-bottom-color: rgba(247, 245, 242, 0.12);
 }
 
-body:has(.hero--video) .site-header .logo-text,
-body:has(.hero--video) .nav-desktop a,
+body:has(.hero--video) .site-header .nav-desktop a,
 body:has(.hero--video) .header-phone {
   color: var(--stone-50);
 }
@@ -660,7 +673,7 @@ body:has(.hero--video) .audience-nav a.active {
   grid-template-columns: 1.5fr 1fr 1fr;
 }
 
-.footer-brand .logo-mark {
+.footer-brand .logo-wordmark--footer {
   margin-bottom: 0.75rem;
 }
 
