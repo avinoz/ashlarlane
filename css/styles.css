@@ -9,6 +9,7 @@
   --text-muted: #858585;
   --text-on-dark: #fdfdfd;
   --text-on-dark-muted: rgba(253, 253, 253, 0.72);
+  --dark-cards: #545573;
   --accent: #5a5ff2;
   --accent-hover: #4f46e5;
   --accent-light: #a5a8ff;
@@ -29,6 +30,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /* border: solid 1px red; */
 }
 
 html {
@@ -42,6 +44,7 @@ body {
   background: var(--bg-light);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img {
@@ -464,6 +467,33 @@ body:has(.hero--video) .audience-nav a.active {
 .section-dark {
   background: var(--bg-dark);
   color: var(--text-on-dark);
+}
+
+.section-dark-band {
+  background: linear-gradient(to bottom, #545573, #363543);
+  color: var(--text-on-dark);
+}
+
+.section-dark-band .eyebrow {
+  color: var(--accent-light);
+}
+
+.section-dark-band .section-lead {
+  color: var(--text-on-dark-muted);
+}
+
+.section-dark-band .stack-card {
+  background: var(--dark-cards);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--white);
+}
+
+.section-dark-band .stack-card h3 {
+  color: var(--white);
+}
+
+.section-dark-band .stack-card p {
+  color: rgba(255, 255, 255, 0.88);
 }
 
 .section-head {

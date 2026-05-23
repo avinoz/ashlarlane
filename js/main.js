@@ -35,27 +35,6 @@ if (navToggle && navMobile) {
   });
 }
 
-const regionTabs = document.querySelectorAll(".region-tab");
-const regionPanels = document.querySelectorAll(".plans-panel");
-
-regionTabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const region = tab.dataset.region;
-
-    regionTabs.forEach((t) => {
-      const active = t === tab;
-      t.classList.toggle("active", active);
-      t.setAttribute("aria-selected", String(active));
-    });
-
-    regionPanels.forEach((panel) => {
-      const active = panel.dataset.regionPanel === region;
-      panel.classList.toggle("active", active);
-      panel.hidden = !active;
-    });
-  });
-});
-
 document.querySelectorAll(".hero-form").forEach((contactForm) => {
   contactForm.addEventListener("submit", (event) => {
     if (contactForm.action.includes("placeholder")) {

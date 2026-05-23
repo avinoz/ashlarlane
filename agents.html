@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>For Agents | Ashlar Lane | 100% Commission Brokerage</title>
-  <meta name="description" content="Hang your license with Ashlar Lane. Investor-friendly brokerage with 99% commission, fast broker support, and transaction coordination.">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta name="description" content="Hang your license with Ashlar Lane — a California-only, Bay Area local brokerage. 99% commission, managing brokers who know this market, and transaction support built for agents here.">
+  <link rel="icon" href="../favicon-ashlar.gif" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
@@ -55,9 +55,9 @@
       </div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Investor-Friendly Brokerage</p>
-          <h1>Hang your license with Ashlar Lane</h1>
-          <p class="hero-lead">Leverage your time. Keep your commission. Boutique support built for agents who invest and close deals.</p>
+          <p class="eyebrow">Bay Area local Brokerage</p>
+          <h1>Hang your license with a brokerage from the Bay Area</h1>
+          <p class="hero-lead">Keep your commission, get responsive local broker support, and work alongside agents who live and close deals in the same markets as your clients. No national franchise, no hidden fees.</p>
           <div class="hero-cta">
             <a href="#contact" class="btn btn-primary">Get Started</a>
             <a href="#contact" class="btn btn-secondary">Schedule Call</a>
@@ -79,15 +79,17 @@
             <span>Phone</span>
             <input type="tel" name="phone" autocomplete="tel">
           </label>
+          <input type="hidden" name="state" value="CA">
           <label>
-            <span>Region</span>
-            <select name="region" required>
-              <option value="">Select your state</option>
-              <option value="CA">California</option>
-              <option value="WA">Washington</option>
-              <option value="OR">Oregon</option>
-              <option value="FL">Florida</option>
-              <option value="other">Other</option>
+            <span>Primary California market</span>
+            <select name="market" required>
+              <option value="">Select your focus area</option>
+              <option value="sf">San Francisco</option>
+              <option value="east-bay">East Bay</option>
+              <option value="peninsula">Peninsula</option>
+              <option value="south-bay">South Bay</option>
+              <option value="north-bay">North Bay</option>
+              <option value="other-ca">Other California market</option>
             </select>
           </label>
           <label>
@@ -108,7 +110,7 @@
       <div class="container">
         <div class="section-head">
           <h2>Why do agents join Ashlar Lane?</h2>
-          <p>Win more deals and keep your commission.</p>
+          <p>A California local brokerage — Bay Area managing brokers, neighborhood-level know-how, and a commission structure that lets you keep more of what you earn.</p>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
@@ -134,12 +136,12 @@
           <article class="feature-card">
             <div class="feature-icon">05</div>
             <h3>Active Network</h3>
-            <p>Private events and an agent community for sharing deals and market insight.</p>
+            <p>Private events and an agent community for sharing deals and market insight across the Bay Area.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">06</div>
-            <h3>Easy Transactions</h3>
-            <p>Complimentary access to transaction coordination tools and licensed assistants.</p>
+            <h3>Local market depth</h3>
+            <p>We operate only in California. Your brokers and teammates understand Bay Area contracts, disclosures, and neighborhoods — so you can advise clients with confidence.</p>
           </article>
         </div>
       </div>
@@ -160,12 +162,12 @@
           <div>
             <p class="eyebrow">Advance your business</p>
             <h2>Crush the basics</h2>
-            <p class="section-lead">Keep your capital without cutting corners.</p>
+            <p class="section-lead">Keep your capital without cutting corners — with brokers who practice in the same California markets you do.</p>
           </div>
           <div class="stack-cards">
             <article class="stack-card">
               <h3>Broker Support</h3>
-              <p>Expect fast, actionable responses from managing brokers on transaction questions. Call or text us anytime.</p>
+              <p>Expect fast, actionable responses from Bay Area managing brokers on California transaction questions. Call or text us during business hours.</p>
             </article>
             <article class="stack-card">
               <h3>Transaction Coordination</h3>
@@ -227,14 +229,10 @@
       <div class="container">
         <div class="section-head">
           <h2>99% Commission Plans</h2>
-          <p>Keep your capital without cutting corners.</p>
-          <div class="region-tabs" role="tablist" aria-label="Select region">
-            <button class="region-tab active" role="tab" aria-selected="true" data-region="ca">California</button>
-            <button class="region-tab" role="tab" aria-selected="false" data-region="wa">Washington</button>
-          </div>
+          <p>California agents only. Simple monthly fees and flat closing costs — no multi-state fine print.</p>
         </div>
 
-        <div class="plans-panel active" data-region-panel="ca">
+        <div class="plans-panel active">
           <div class="plans-grid">
             <article class="plan-card">
               <h3>Agent Standard</h3>
@@ -259,34 +257,7 @@
               <a href="#contact" class="btn btn-primary btn-block">Schedule Call</a>
             </article>
           </div>
-          <p class="plan-footnote">Closing fee applies to sale prices up to $2M or commissions up to $50K, then resets. New agents pay an additional mentorship fee on their first five closings.</p>
-        </div>
-
-        <div class="plans-panel" data-region-panel="wa" hidden>
-          <div class="plans-grid">
-            <article class="plan-card">
-              <h3>Agent Standard</h3>
-              <p class="plan-price">$50<span>/mo</span> + $500<span>/closing</span></p>
-              <ul>
-                <li>Fast, local broker support</li>
-                <li>Transaction file management</li>
-                <li>E&amp;O large claim insurance</li>
-              </ul>
-              <a href="#contact" class="btn btn-secondary btn-block">Schedule Call</a>
-            </article>
-            <article class="plan-card plan-card-featured">
-              <p class="plan-badge">Most popular</p>
-              <h3>Agent Business</h3>
-              <p class="plan-price">$100<span>/mo</span> + $350<span>/closing</span></p>
-              <ul>
-                <li>Everything in Standard</li>
-                <li>Dotloop and file support</li>
-                <li>$150 off transaction fee</li>
-              </ul>
-              <a href="#contact" class="btn btn-primary btn-block">Schedule Call</a>
-            </article>
-          </div>
-          <p class="plan-footnote">No minimum commitment. Transfer anytime. Team discounts available on upgraded plans.</p>
+          <p class="plan-footnote">Closing fee applies to sale prices up to $2M or commissions up to $50K, then resets. New agents pay an additional mentorship fee on their first five closings. Ashlar Lane is licensed in California only.</p>
         </div>
       </div>
     </section>
@@ -298,28 +269,80 @@
         </div>
         <div class="faq-list">
           <details class="faq-item">
-            <summary>Are there any additional or hidden fees?</summary>
-            <p>No setup charges. State-mandated fees are passed through at cost with no markup.</p>
+            <summary>What is the total charge per closed transaction?</summary>
+            <p>Ashlar Lane uses a simple model: a monthly plan fee plus a flat closing fee per transaction — not a percentage of your commission. Plans start at $85/month + $550 per closing; our Business plan is $125/month + $450 per closing. See <a href="#plans">commission plans</a> for full details. State-mandated fees are passed through at cost with no markup.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How soon do I get paid after escrow closes?</summary>
+            <p>Once your transaction file is approved and we receive confirmed closing documents, commission disbursements are processed promptly — typically within one to two business days.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I negotiate my commission with clients?</summary>
+            <p>Yes. You set your own rates with buyers and sellers. The only requirement is that your commission covers Ashlar Lane's closing fee for your plan.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I get broker support?</summary>
+            <p>Reach our managing brokers by phone, email, or text during business hours at <a href="tel:+14155550100">(415) 555-0100</a>. For urgent transaction questions that cannot wait until the next business day, after-hours contact information is provided in your agent welcome materials.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Where do I get C.A.R. and transaction forms?</summary>
+            <p>California agents typically access C.A.R. forms through ZipForm at <a href="https://www.car.org" target="_blank" rel="noopener noreferrer">car.org</a>, included with your local association membership. If you need help setting up access, our team can walk you through the process.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What about REALTOR® memberships and MLS access?</summary>
+            <p>Ashlar Lane is a California-licensed brokerage; each agent maintains their own REALTOR® association and MLS membership for the California markets they serve. Dues and requirements vary by local board — we help you navigate Bay Area and statewide requirements.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I know what is required for my transaction?</summary>
+            <p>When you open a transaction in our system, you will see a checklist of required documents based on the deal type — listing, purchase, referral, and so on. If anything is unclear, your transaction coordinator or managing broker can help.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I join if I also hold an NMLS mortgage license?</summary>
+            <p>Often, yes. Agents who hold a separate NMLS license under another mortgage broker can typically keep their real estate license with Ashlar Lane, provided your real estate transactions flow through our brokerage and the two businesses are marketed separately. Contact us before joining to confirm your specific situation.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can my clients use any lender, title company, or escrow provider?</summary>
+            <p>Yes. Your clients may work with any lender, title company, or escrow provider they choose. We can recommend trusted Bay Area vendors when helpful, but the decision is yours and your client's.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you accept part-time agents?</summary>
+            <p>Yes. We welcome part-time and dual-career agents. There is no requirement to practice full time to hang your license with Ashlar Lane.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Where does Ashlar Lane operate?</summary>
+            <p>California only. Our managing brokers and leadership are Bay Area–based, and we support agents working across Northern California — from San Francisco and the Peninsula to the East Bay, South Bay, and North Bay. There is no requirement to work from a physical office; you run your business locally, with brokers who know these markets inside and out.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I use a local vendor for business cards, signs, and marketing?</summary>
+            <p>Yes. You may order business cards, signs, and print materials from any vendor, as long as they follow our marketing guidelines — including the Ashlar Lane logo where required and your DRE license number. Marketing beyond basic contact information may need broker approval.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do I need to join a local association to do business?</summary>
+            <p>Yes. To list and sell property, you will need active membership with a local REALTOR® association that includes MLS access for your market. That membership is between you and the association, not the brokerage — but we will guide you through the steps when you join.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you offer lead generation training?</summary>
+            <p>We provide resources to help you build your business, including guidance on lead generation and client follow-up. Our core focus is transaction support, compliance, and responsive broker access — not running a lead-generation program for you.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you provide leads?</summary>
+            <p>Ashlar Lane does not guarantee leads. Many of our agents generate their own business or use third-party lead services on their own. We focus on helping you close the deals you bring in with strong broker support and transaction coordination.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do I receive anything if I refer agents to join?</summary>
+            <p>Yes. If you refer licensed agents who join Ashlar Lane and close transactions, you may qualify for recruiting bonuses under our agent referral program. Ask us for current program details when you join.</p>
           </details>
           <details class="faq-item">
             <summary>Is there a minimum commitment?</summary>
-            <p>No. You can transfer your license out anytime.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Do you accept new licensees?</summary>
-            <p>Yes. New agents receive transaction mentorship on early closings. We teach contracts and compliance, not lead generation.</p>
-          </details>
-          <details class="faq-item">
-            <summary>What do you expect and allow?</summary>
-            <p>No mandatory meetings. Work with buyers and sellers, use your own brand, sell your own rehabs, and assign off-market contracts within local rules and firm policies.</p>
+            <p>No. You can transfer your license out at any time. New agents receive transaction mentorship on their first closings — we focus on contracts and compliance, not mandatory meetings or lead quotas.</p>
           </details>
           <details class="faq-item">
             <summary>Do you offer discounts for teams?</summary>
-            <p>Yes. On the upgraded plan, add agents for $50/mo each. If a team splits, agents keep the discounted rate for six months.</p>
+            <p>Yes. On the Business plan, add agents for $50/month each. If a team splits, agents keep the discounted rate for six months.</p>
           </details>
           <details class="faq-item">
-            <summary>How do I transfer my license?</summary>
-            <p>Call us at <a href="tel:+14155550100">(415) 555-0100</a> and we will walk you through the steps. Most transfers take just a few minutes.</p>
+            <summary>How do I transfer my license to Ashlar Lane?</summary>
+            <p>Call us at <a href="tel:+14155550100">(415) 555-0100</a> or submit the form above and we will walk you through the transfer. Most California transfers take just a few minutes once you are ready.</p>
           </details>
         </div>
       </div>
@@ -343,7 +366,7 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <img src="ashlarlane-wordmark.gif" alt="Ashlar Lane" class="logo-wordmark logo-wordmark--footer" width="160" height="32">
-        <p>Ashlar Lane is a licensed real estate brokerage focused on investor-friendly agent support.</p>
+        <p>A California-only, Bay Area local brokerage supporting agents who know this market — and the clients they serve.</p>
       </div>
       <div>
         <h4>Contact</h4>
@@ -363,7 +386,7 @@
     </div>
     <div class="container footer-bottom">
       <p>Copyright <span id="year"></span> Ashlar Lane. All rights reserved.</p>
-      <p class="footer-disclosure">DISCLOSURE: Ashlar Lane is a licensed real estate brokerage. Financial estimates on this site should not substitute your own due diligence. Contact information submitted may be used to respond to your inquiry.</p>
+      <p class="footer-disclosure">DISCLOSURE: Ashlar Lane is a licensed California real estate brokerage. We do not operate outside California. Contact information submitted may be used to respond to your inquiry.</p>
     </div>
   </footer>
 
