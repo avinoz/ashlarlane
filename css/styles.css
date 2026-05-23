@@ -288,7 +288,7 @@ a {
 
 .hero--video .hero-copy h1 {
   color: var(--white);
-  max-width: 14ch;
+  max-width: none;
 }
 
 .hero--video .hero-lead {

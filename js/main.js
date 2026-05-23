@@ -1,5 +1,4 @@
-const heroVideo = document.querySelector(".hero-video");
-if (heroVideo) {
+document.querySelectorAll(".hero-video").forEach((heroVideo) => {
   const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const syncVideo = () => {
     if (prefersReducedMotion.matches) {
@@ -11,7 +10,7 @@ if (heroVideo) {
   };
   syncVideo();
   prefersReducedMotion.addEventListener("change", syncVideo);
-}
+});
 
 const yearEl = document.getElementById("year");
 if (yearEl) {
