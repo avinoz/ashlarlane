@@ -252,6 +252,103 @@ a {
   background: linear-gradient(transparent, var(--stone-50));
 }
 
+.hero--video {
+  min-height: min(92vh, 920px);
+  padding: 5rem 0 5.5rem;
+}
+
+.hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(105deg, rgba(28, 25, 22, 0.82) 0%, rgba(28, 25, 22, 0.55) 45%, rgba(28, 25, 22, 0.35) 100%),
+    linear-gradient(to top, rgba(28, 25, 22, 0.75) 0%, transparent 40%);
+}
+
+.hero--video .hero-grid {
+  z-index: 1;
+}
+
+.hero--video .hero-copy {
+  color: var(--stone-50);
+}
+
+.hero--video .hero-copy h1 {
+  color: var(--white);
+  max-width: 14ch;
+}
+
+.hero--video .hero-lead {
+  color: rgba(247, 245, 242, 0.88);
+}
+
+.hero--video .eyebrow {
+  color: #e8c4a0;
+}
+
+.hero--video .btn-secondary {
+  border-color: rgba(247, 245, 242, 0.45);
+  color: var(--stone-50);
+  background: rgba(247, 245, 242, 0.08);
+}
+
+.hero--video .btn-secondary:hover {
+  background: rgba(247, 245, 242, 0.16);
+}
+
+body:has(.hero--video) .site-header {
+  background: rgba(28, 25, 22, 0.35);
+  border-bottom-color: rgba(247, 245, 242, 0.12);
+}
+
+body:has(.hero--video) .site-header .logo-text,
+body:has(.hero--video) .nav-desktop a,
+body:has(.hero--video) .header-phone {
+  color: var(--stone-50);
+}
+
+body:has(.hero--video) .nav-toggle span {
+  background: var(--stone-50);
+}
+
+body:has(.hero--video) .audience-nav {
+  background: rgba(247, 245, 242, 0.12);
+}
+
+body:has(.hero--video) .audience-nav a {
+  color: rgba(247, 245, 242, 0.85);
+}
+
+body:has(.hero--video) .audience-nav a.active {
+  color: var(--stone-800);
+  background: var(--stone-50);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-video {
+    display: none;
+  }
+
+  .hero--video .hero-media {
+    background:
+      radial-gradient(circle at top right, rgba(184, 115, 51, 0.18), transparent 35%),
+      linear-gradient(180deg, #3d3832 0%, var(--stone-900) 70%);
+  }
+}
+
 .hero-grid {
   position: relative;
   display: grid;

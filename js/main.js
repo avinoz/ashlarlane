@@ -1,3 +1,18 @@
+const heroVideo = document.querySelector(".hero-video");
+if (heroVideo) {
+  const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const syncVideo = () => {
+    if (prefersReducedMotion.matches) {
+      heroVideo.pause();
+      heroVideo.removeAttribute("autoplay");
+    } else {
+      heroVideo.play().catch(() => {});
+    }
+  };
+  syncVideo();
+  prefersReducedMotion.addEventListener("change", syncVideo);
+}
+
 const yearEl = document.getElementById("year");
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
