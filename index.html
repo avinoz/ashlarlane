@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashlar Lane | Professional, Modern Brokerage | 100% Commission</title>
-  <meta name="description" content="Hang your license with Ashlar Lane. Investor-friendly brokerage with 99% commission, fast broker support, and transaction coordination.">
+  <title>Ashlar Lane | Buy &amp; Sell Real Estate with Clarity</title>
+  <meta name="description" content="Work with Ashlar Lane agents who bring investor-grade analysis, responsive support, and straight talk to every buyer and seller transaction.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,30 +14,35 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a href="/" class="logo" aria-label="Ashlar Lane home">
+      <a href="index.html" class="logo" aria-label="Ashlar Lane home">
         <span class="logo-mark">AL</span>
         <span class="logo-text">Ashlar Lane</span>
       </a>
       <nav class="nav-desktop" aria-label="Primary">
-        <a href="#why">Why Join</a>
-        <a href="#support">Support</a>
-        <a href="#plans">Plans</a>
+        <a href="#buy">Buy</a>
+        <a href="#sell">Sell</a>
+        <a href="#why">Why Us</a>
         <a href="#faq">FAQ</a>
       </nav>
       <div class="header-actions">
+        <div class="audience-nav" aria-label="Choose audience">
+          <a href="index.html" class="active" aria-current="page">Clients</a>
+          <a href="agents.html">Agents</a>
+        </div>
         <a href="tel:+14155550100" class="header-phone">(415) 555-0100</a>
-        <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
         <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
     <nav class="nav-mobile" aria-label="Mobile" hidden>
-      <a href="#why">Why Join</a>
-      <a href="#support">Support</a>
-      <a href="#plans">Plans</a>
+      <a href="agents.html">For Agents</a>
+      <a href="#buy">Buy</a>
+      <a href="#sell">Sell</a>
+      <a href="#why">Why Us</a>
       <a href="#faq">FAQ</a>
-      <a href="#contact">Get Started</a>
+      <a href="#contact">Get in Touch</a>
     </nav>
   </header>
 
@@ -46,17 +51,18 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Investor-Friendly Brokerage</p>
-          <h1>Hang your license with Ashlar Lane</h1>
-          <p class="hero-lead">Leverage your time. Keep your commission. Boutique support built for agents who invest and close deals.</p>
+          <p class="eyebrow">Licensed Real Estate Brokerage</p>
+          <h1>Buy or sell with clarity</h1>
+          <p class="hero-lead">Whether you are purchasing your first home, selling a property, or evaluating an investment, Ashlar Lane agents bring analysis, responsiveness, and straight talk to every deal.</p>
           <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary">Get Started</a>
-            <a href="#contact" class="btn btn-secondary">Schedule Call</a>
+            <a href="#contact" class="btn btn-primary">Talk to Us</a>
+            <a href="#buy" class="btn btn-secondary">Explore Services</a>
           </div>
         </div>
         <form class="hero-form card" id="contact" action="https://formspree.io/f/placeholder" method="POST">
-          <h2>Join Ashlar Lane</h2>
-          <p class="form-note">Tell us about yourself and we will reach out with next steps.</p>
+          <input type="hidden" name="form_type" value="client_inquiry">
+          <h2>Start a conversation</h2>
+          <p class="form-note">Tell us what you are looking to do and we will connect you with the right agent.</p>
           <label>
             <span>Full name</span>
             <input type="text" name="name" required autocomplete="name">
@@ -70,66 +76,133 @@
             <input type="tel" name="phone" autocomplete="tel">
           </label>
           <label>
-            <span>Region</span>
-            <select name="region" required>
-              <option value="">Select your state</option>
-              <option value="CA">California</option>
-              <option value="WA">Washington</option>
-              <option value="OR">Oregon</option>
-              <option value="FL">Florida</option>
-              <option value="other">Other</option>
+            <span>I want to</span>
+            <select name="intent" required>
+              <option value="">Select one</option>
+              <option value="buy">Buy a home</option>
+              <option value="sell">Sell a home</option>
+              <option value="invest">Buy an investment property</option>
+              <option value="both">Buy and sell</option>
+              <option value="other">Something else</option>
             </select>
           </label>
           <label>
-            <span>Experience</span>
-            <select name="experience">
-              <option value="experienced">Licensed agent</option>
-              <option value="new">New licensee</option>
-              <option value="transferring">Transferring soon</option>
-            </select>
+            <span>Market / area</span>
+            <input type="text" name="market" placeholder="City or region" autocomplete="address-level2">
           </label>
-          <button type="submit" class="btn btn-primary btn-block">Get Started</button>
-          <p class="form-disclaimer">By submitting, you agree to be contacted about Ashlar Lane agent plans.</p>
+          <button type="submit" class="btn btn-primary btn-block">Get in Touch</button>
+          <p class="form-disclaimer">By submitting, you agree to be contacted about your real estate inquiry.</p>
         </form>
+      </div>
+    </section>
+
+    <section class="section" id="buy">
+      <div class="container">
+        <div class="split-section">
+          <div>
+            <p class="eyebrow">For buyers</p>
+            <h2>Find the right property, not just any property</h2>
+            <p class="section-lead">Our agents help you evaluate neighborhoods, compare options, and move quickly when the numbers make sense.</p>
+          </div>
+          <div class="stack-cards">
+            <article class="stack-card">
+              <h3>Clear guidance</h3>
+              <p>Understand pricing, comps, and trade-offs before you write an offer.</p>
+            </article>
+            <article class="stack-card">
+              <h3>Investor-minded analysis</h3>
+              <p>Many Ashlar Lane agents invest themselves and bring that lens to every purchase.</p>
+            </article>
+            <article class="stack-card">
+              <h3>Responsive support</h3>
+              <p>Fast answers on tours, offers, inspections, and closing timelines.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="sell">
+      <div class="container">
+        <div class="split-section reverse">
+          <div>
+            <p class="eyebrow">For sellers</p>
+            <h2>Price, market, and close with confidence</h2>
+            <p class="section-lead">From listing prep to negotiation, we help you present your property well and protect your outcome at the closing table.</p>
+          </div>
+          <div class="stack-cards">
+            <article class="stack-card">
+              <h3>Pricing strategy</h3>
+              <p>Data-informed pricing based on current market conditions and buyer demand.</p>
+            </article>
+            <article class="stack-card">
+              <h3>Smooth transactions</h3>
+              <p>Licensed support to keep paperwork, deadlines, and communication on track.</p>
+            </article>
+            <article class="stack-card">
+              <h3>Direct communication</h3>
+              <p>No runaround. You will know where your deal stands at every step.</p>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="why">
       <div class="container">
         <div class="section-head">
-          <h2>Why do agents join Ashlar Lane?</h2>
-          <p>Win more deals and keep your commission.</p>
+          <h2>Why work with Ashlar Lane?</h2>
+          <p>A modern brokerage built for clients who want substance over sales pitch.</p>
         </div>
         <div class="feature-grid">
           <article class="feature-card">
             <div class="feature-icon">01</div>
-            <h3>Professional Image</h3>
-            <p>Leverage our brand or create your own, powered by Ashlar Lane.</p>
+            <h3>Experienced agents</h3>
+            <p>Work with licensed professionals backed by managing brokers who know the contracts cold.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">02</div>
-            <h3>Fast Support</h3>
-            <p>Licensed transaction support and experienced managing brokers when you need them.</p>
+            <h3>Investor perspective</h3>
+            <p>Many of our agents buy and sell for themselves, not just on commission.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">03</div>
-            <h3>99% Commission</h3>
-            <p>No setup fees or hidden fees. A 99/1 split less a flat closing fee.</p>
+            <h3>Fast responses</h3>
+            <p>Questions answered quickly, whether you are under contract or still exploring options.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">04</div>
-            <h3>Investor Culture</h3>
-            <p>Many of our agents invest and represent themselves on their own deals.</p>
+            <h3>Transparent process</h3>
+            <p>Plain-language explanations of offers, contingencies, and closing costs.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">05</div>
-            <h3>Active Network</h3>
-            <p>Private events and an agent community for sharing deals and market insight.</p>
+            <h3>Buy or sell</h3>
+            <p>Primary residences, relocations, flips, rentals, and off-market opportunities.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">06</div>
-            <h3>Easy Transactions</h3>
-            <p>Complimentary access to transaction coordination tools and licensed assistants.</p>
+            <h3>Local expertise</h3>
+            <p>Agents who know their markets and can advise on neighborhood-level nuance.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="path-cards">
+          <article class="path-card">
+            <p class="eyebrow eyebrow-light">Buying</p>
+            <h3>Ready to search?</h3>
+            <p>Tell us your budget, timeline, and must-haves. We will match you with an agent who fits.</p>
+            <a href="#contact" class="btn btn-secondary">Start buying</a>
+          </article>
+          <article class="path-card">
+            <p class="eyebrow eyebrow-light">Selling</p>
+            <h3>Thinking about listing?</h3>
+            <p>Get a straightforward conversation about value, timing, and what to expect before you commit.</p>
+            <a href="#contact" class="btn btn-secondary">Start selling</a>
           </article>
         </div>
       </div>
@@ -138,146 +211,9 @@
     <section class="section section-alt testimonial">
       <div class="container narrow">
         <blockquote>
-          <p>We moved our business here after years at full-service and discount brokerages. <strong>Ashlar Lane is the right blend of low fees and high responsiveness.</strong> We can brand our cards and signs with our own logo. Online tools are polished. Thumbs up.</p>
-          <footer>Agent testimonial</footer>
+          <p>Our agent walked us through every line of the contract, responded within minutes, and never pushed us toward a property that did not fit. <strong>It felt like working with someone on our side of the table.</strong></p>
+          <footer>Client testimonial</footer>
         </blockquote>
-      </div>
-    </section>
-
-    <section class="section" id="support">
-      <div class="container">
-        <div class="split-section">
-          <div>
-            <p class="eyebrow">Advance your business</p>
-            <h2>Crush the basics</h2>
-            <p class="section-lead">Keep your capital without cutting corners.</p>
-          </div>
-          <div class="stack-cards">
-            <article class="stack-card">
-              <h3>Broker Support</h3>
-              <p>Expect fast, actionable responses from managing brokers on transaction questions. Call or text us anytime.</p>
-            </article>
-            <article class="stack-card">
-              <h3>Transaction Coordination</h3>
-              <p>Leverage a licensed assistant to prep paperwork and keep timelines on track.</p>
-            </article>
-            <article class="stack-card">
-              <h3>Professional Knowledge</h3>
-              <p>We do not teach marketing or sales. We focus on contracts, compliance, and closing with confidence.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark">
-      <div class="container">
-        <div class="split-section reverse">
-          <div>
-            <p class="eyebrow eyebrow-light">Fuel opportunity</p>
-            <h2>Surround yourself with investors</h2>
-            <p class="section-lead">Network with colleagues who think like operators, not order-takers.</p>
-          </div>
-          <div class="stack-cards">
-            <article class="stack-card stack-card-dark">
-              <h3>Expand your circle</h3>
-              <p>Meet agents at private events. If your network is your net worth, this is where you grow it.</p>
-            </article>
-            <article class="stack-card stack-card-dark">
-              <h3>Connect with clients</h3>
-              <p>Work with investor-minded buyers and sellers who value analysis, speed, and straight talk.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="split-section">
-          <div>
-            <p class="eyebrow">It is your business</p>
-            <h2>We work for you</h2>
-          </div>
-          <div class="stack-cards">
-            <article class="stack-card">
-              <h3>It is your money</h3>
-              <p>We do not provide office space, CRMs, or websites. We invest in faster support and customer service.</p>
-            </article>
-            <article class="stack-card">
-              <h3>Use our brand or yours</h3>
-              <p>Leverage our reputation as an investor-savvy brokerage, or design your own brand powered by Ashlar Lane.</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="plans">
-      <div class="container">
-        <div class="section-head">
-          <h2>99% Commission Plans</h2>
-          <p>Keep your capital without cutting corners.</p>
-          <div class="region-tabs" role="tablist" aria-label="Select region">
-            <button class="region-tab active" role="tab" aria-selected="true" data-region="ca">California</button>
-            <button class="region-tab" role="tab" aria-selected="false" data-region="wa">Washington</button>
-          </div>
-        </div>
-
-        <div class="plans-panel active" data-region-panel="ca">
-          <div class="plans-grid">
-            <article class="plan-card">
-              <h3>Agent Standard</h3>
-              <p class="plan-price">$85<span>/mo</span> + $550<span>/closing</span></p>
-              <ul>
-                <li>Broker support and education</li>
-                <li>Transaction management</li>
-                <li>E&amp;O large claim insurance</li>
-              </ul>
-              <a href="#contact" class="btn btn-secondary btn-block">Schedule Call</a>
-            </article>
-            <article class="plan-card plan-card-featured">
-              <p class="plan-badge">Most popular</p>
-              <h3>Agent Business</h3>
-              <p class="plan-price">$125<span>/mo</span> + $450<span>/closing</span></p>
-              <ul>
-                <li>Everything in Standard</li>
-                <li>$100 off closing fee</li>
-                <li>90/10 split on rentals</li>
-                <li>Discounted coordination services</li>
-              </ul>
-              <a href="#contact" class="btn btn-primary btn-block">Schedule Call</a>
-            </article>
-          </div>
-          <p class="plan-footnote">Closing fee applies to sale prices up to $2M or commissions up to $50K, then resets. New agents pay an additional mentorship fee on their first five closings.</p>
-        </div>
-
-        <div class="plans-panel" data-region-panel="wa" hidden>
-          <div class="plans-grid">
-            <article class="plan-card">
-              <h3>Agent Standard</h3>
-              <p class="plan-price">$50<span>/mo</span> + $500<span>/closing</span></p>
-              <ul>
-                <li>Fast, local broker support</li>
-                <li>Transaction file management</li>
-                <li>E&amp;O large claim insurance</li>
-              </ul>
-              <a href="#contact" class="btn btn-secondary btn-block">Schedule Call</a>
-            </article>
-            <article class="plan-card plan-card-featured">
-              <p class="plan-badge">Most popular</p>
-              <h3>Agent Business</h3>
-              <p class="plan-price">$100<span>/mo</span> + $350<span>/closing</span></p>
-              <ul>
-                <li>Everything in Standard</li>
-                <li>Dotloop and file support</li>
-                <li>$150 off transaction fee</li>
-              </ul>
-              <a href="#contact" class="btn btn-primary btn-block">Schedule Call</a>
-            </article>
-          </div>
-          <p class="plan-footnote">No minimum commitment. Transfer anytime. Team discounts available on upgraded plans.</p>
-        </div>
       </div>
     </section>
 
@@ -288,28 +224,24 @@
         </div>
         <div class="faq-list">
           <details class="faq-item">
-            <summary>Are there any additional or hidden fees?</summary>
-            <p>No setup charges. State-mandated fees are passed through at cost with no markup.</p>
+            <summary>Do I pay Ashlar Lane directly?</summary>
+            <p>Typically, brokerage compensation is handled through the transaction according to local custom and your agreement with your agent. Your agent can explain how fees work before you get started.</p>
           </details>
           <details class="faq-item">
-            <summary>Is there a minimum commitment?</summary>
-            <p>No. You can transfer your license out anytime.</p>
+            <summary>Can you help with investment properties?</summary>
+            <p>Yes. Many Ashlar Lane agents work with buyers and sellers evaluating rentals, flips, and other investment opportunities.</p>
           </details>
           <details class="faq-item">
-            <summary>Do you accept new licensees?</summary>
-            <p>Yes. New agents receive transaction mentorship on early closings. We teach contracts and compliance, not lead generation.</p>
+            <summary>How quickly will someone respond?</summary>
+            <p>We aim for same-day responses on new inquiries. If you are under contract, your agent and our broker support team prioritize time-sensitive questions.</p>
           </details>
           <details class="faq-item">
-            <summary>What do you expect and allow?</summary>
-            <p>No mandatory meetings. Work with buyers and sellers, use your own brand, sell your own rehabs, and assign off-market contracts within local rules and firm policies.</p>
+            <summary>What areas do you serve?</summary>
+            <p>Our agents operate in multiple markets. Share your city or region in the contact form and we will connect you with the right local agent.</p>
           </details>
           <details class="faq-item">
-            <summary>Do you offer discounts for teams?</summary>
-            <p>Yes. On the upgraded plan, add agents for $50/mo each. If a team splits, agents keep the discounted rate for six months.</p>
-          </details>
-          <details class="faq-item">
-            <summary>How do I transfer my license?</summary>
-            <p>Call us at <a href="tel:+14155550100">(415) 555-0100</a> and we will walk you through the steps. Most transfers take just a few minutes.</p>
+            <summary>I am a licensed agent. Is this page for me?</summary>
+            <p>If you want to hang your license with Ashlar Lane, visit our <a href="agents.html">agents page</a> for commission plans and brokerage details.</p>
           </details>
         </div>
       </div>
@@ -318,12 +250,12 @@
     <section class="section cta-band">
       <div class="container cta-band-inner">
         <div>
-          <h2>Ready to hang your license?</h2>
-          <p>Talk to a managing broker today.</p>
+          <h2>Ready to buy or sell?</h2>
+          <p>Connect with an Ashlar Lane agent today.</p>
         </div>
         <div class="cta-band-actions">
           <a href="tel:+14155550100" class="btn btn-secondary">Call (415) 555-0100</a>
-          <a href="#contact" class="btn btn-primary">Get Started</a>
+          <a href="#contact" class="btn btn-primary">Get in Touch</a>
         </div>
       </div>
     </section>
@@ -333,18 +265,19 @@
     <div class="container footer-grid">
       <div class="footer-brand">
         <span class="logo-mark">AL</span>
-        <p>Ashlar Lane is a licensed real estate brokerage focused on investor-friendly agent support.</p>
+        <p>Ashlar Lane is a licensed real estate brokerage serving buyers, sellers, and the agents who represent them.</p>
       </div>
       <div>
         <h4>Contact</h4>
         <ul>
           <li><a href="tel:+14155550100">(415) 555-0100</a></li>
-          <li><a href="mailto:agents@ashlarlane.com">agents@ashlarlane.com</a></li>
+          <li><a href="mailto:hello@ashlarlane.com">hello@ashlarlane.com</a></li>
         </ul>
       </div>
       <div>
-        <h4>Legal</h4>
+        <h4>Explore</h4>
         <ul>
+          <li><a href="agents.html">For Agents</a></li>
           <li><a href="#">Terms of Service</a></li>
           <li><a href="#">Privacy Policy</a></li>
         </ul>
@@ -352,7 +285,7 @@
     </div>
     <div class="container footer-bottom">
       <p>Copyright <span id="year"></span> Ashlar Lane. All rights reserved.</p>
-      <p class="footer-disclosure">DISCLOSURE: Ashlar Lane is a licensed real estate brokerage. Financial estimates on this site should not substitute your own due diligence. Contact information submitted may be used to respond to your inquiry.</p>
+      <p class="footer-disclosure">DISCLOSURE: Ashlar Lane is a licensed real estate brokerage. Information on this site is not a solicitation or offer where prohibited. Contact information submitted may be used to respond to your inquiry.</p>
     </div>
   </footer>
 

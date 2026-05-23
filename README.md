@@ -75,7 +75,8 @@ You should see the four GitHub IP addresses for the apex and a CNAME to `avinoz.
 
 ## Structure
 
-- `index.html` — landing page (Pellego-style agent recruitment)
-- `css/styles.css` — styles
+- `index.html` — buyers & sellers (client landing page)
+- `agents.html` — agent recruitment (commission plans, license transfer)
+- `css/styles.css` — shared styles
 - `js/main.js` — mobile nav and region tabs
 - `CNAME` — custom domain for GitHub Pages

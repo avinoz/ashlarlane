@@ -109,6 +109,50 @@ a {
   gap: 0.75rem;
 }
 
+.audience-nav {
+  display: none;
+  padding: 0.25rem;
+  background: var(--stone-100);
+  border-radius: 999px;
+  gap: 0.15rem;
+}
+
+.audience-nav a {
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.audience-nav a.active {
+  background: var(--white);
+  box-shadow: 0 4px 14px rgba(28, 25, 22, 0.08);
+}
+
+.path-cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.path-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+
+.path-card h3 {
+  margin: 0.35rem 0 0.75rem;
+  font-family: "Fraunces", Georgia, serif;
+}
+
+.path-card p {
+  color: rgba(247, 245, 242, 0.78);
+  margin-bottom: 1.25rem;
+}
+
 .header-phone {
   display: none;
   font-weight: 600;
@@ -558,6 +602,10 @@ a {
 
   .header-phone {
     display: inline;
+  }
+
+  .audience-nav {
+    display: inline-flex;
   }
 
   .nav-toggle,
