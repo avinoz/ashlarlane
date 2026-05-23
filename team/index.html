@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Agents | Ashlar Lane | Bay Area Real Estate</title>
+  <meta name="description" content="Browse Ashlar Lane agents serving Northern California and the Bay Area. Find the right fit for your buying or selling goals.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo" aria-label="Ashlar Lane home">
+        <img src="../ashlarlane-wordmark.gif" alt="Ashlar Lane" class="logo-wordmark">
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="../index.html#buy">Buy</a>
+        <a href="../index.html#sell">Sell</a>
+        <a href="index.html" class="active">Our Agents</a>
+        <a href="../index.html#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <div class="audience-nav" aria-label="Choose audience">
+          <a href="../index.html" class="active">Clients</a>
+          <a href="../agents.html">Agents</a>
+        </div>
+        <a href="tel:+14155550100" class="header-phone">(415) 555-0100</a>
+        <a href="../index.html#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav-mobile" aria-label="Mobile" hidden>
+      <a href="../agents.html">For Agents</a>
+      <a href="../index.html#buy">Buy</a>
+      <a href="../index.html#sell">Sell</a>
+      <a href="index.html">Our Agents</a>
+      <a href="../index.html#contact">Get in Touch</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Northern California · Bay Area</p>
+        <h1>Find your agent</h1>
+        <p class="page-hero-lead">Our teammates come from different backgrounds — data, design, construction, and neighborhood expertise — so we can match you with someone who fits how you think about home.</p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="filter-bar" role="group" aria-label="Filter by specialty">
+          <button class="filter-btn active" type="button" data-filter="all">All agents</button>
+          <button class="filter-btn" type="button" data-filter="data">Data-driven</button>
+          <button class="filter-btn" type="button" data-filter="vision">Seeing potential</button>
+          <button class="filter-btn" type="button" data-filter="design">Layout &amp; renovations</button>
+        </div>
+        <div class="agent-grid" id="agent-grid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container cta-band-inner">
+        <div>
+          <h2>Not sure who to pick?</h2>
+          <p>Tell us about your goals and we will recommend an agent on our Bay Area team.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="../index.html#contact" class="btn btn-primary">Get matched</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="../ashlarlane-wordmark.gif" alt="Ashlar Lane" class="logo-wordmark logo-wordmark--footer">
+        <p>Ashlar Lane is a Bay Area brokerage helping buyers and sellers find the right agent for their goals.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+14155550100">(415) 555-0100</a></li>
+          <li><a href="mailto:hello@ashlarlane.com">hello@ashlarlane.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../agents.html">For Agents</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>Copyright <span id="year"></span> Ashlar Lane. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/reveal.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/team.js"></script>
+  <script src="../js/team-page.js"></script>
+</body>
+</html>

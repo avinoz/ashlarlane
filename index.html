@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ashlar Lane | Buy &amp; Sell Real Estate with Clarity</title>
-  <meta name="description" content="Work with Ashlar Lane agents who bring investor-grade analysis, responsive support, and straight talk to every buyer and seller transaction.">
+  <title>Ashlar Lane | Find the Right Bay Area Agent</title>
+  <meta name="description" content="Ashlar Lane connects Bay Area buyers and sellers with the right agent. Northern California specialists in data, design, and neighborhood expertise.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Fraunces:opsz,9..144,600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -18,9 +18,9 @@
         <img src="ashlarlane-wordmark.gif" alt="Ashlar Lane" class="logo-wordmark">
       </a>
       <nav class="nav-desktop" aria-label="Primary">
+        <a href="team/index.html">Our Agents</a>
         <a href="#buy">Buy</a>
         <a href="#sell">Sell</a>
-        <a href="#why">Why Us</a>
         <a href="#faq">FAQ</a>
       </nav>
       <div class="header-actions">
@@ -29,18 +29,17 @@
           <a href="agents.html">Agents</a>
         </div>
         <a href="tel:+14155550100" class="header-phone">(415) 555-0100</a>
-        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+        <a href="team/index.html" class="btn btn-primary btn-sm">Find an Agent</a>
         <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
     <nav class="nav-mobile" aria-label="Mobile" hidden>
+      <a href="team/index.html">Our Agents</a>
       <a href="agents.html">For Agents</a>
       <a href="#buy">Buy</a>
       <a href="#sell">Sell</a>
-      <a href="#why">Why Us</a>
-      <a href="#faq">FAQ</a>
       <a href="#contact">Get in Touch</a>
     </nav>
   </header>
@@ -55,18 +54,18 @@
       </div>
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Licensed Real Estate Brokerage</p>
-          <h1>Buy or sell with clarity</h1>
-          <p class="hero-lead">Whether you are purchasing your first home, selling a property, or evaluating an investment, Ashlar Lane agents bring analysis, responsiveness, and straight talk to every deal.</p>
+          <p class="eyebrow">Bay Area · Northern California</p>
+          <h1>Find the local agent who fits you</h1>
+          <p class="hero-lead">Buying or selling a home is personal. We match you with an Ashlar Lane agent whose strengths align with your goals — whether you want data, vision, or design guidance.</p>
           <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary">Talk to Us</a>
-            <a href="#buy" class="btn btn-secondary">Explore Services</a>
+            <a href="team/index.html" class="btn btn-primary">Browse our agents</a>
+            <a href="#contact" class="btn btn-secondary">Get matched</a>
           </div>
         </div>
         <form class="hero-form card" id="contact" action="https://formspree.io/f/placeholder" method="POST">
           <input type="hidden" name="form_type" value="client_inquiry">
-          <h2>Start a conversation</h2>
-          <p class="form-note">Tell us what you are looking to do and we will connect you with the right agent.</p>
+          <h2>Get matched with an agent</h2>
+          <p class="form-note">Tell us what you need and we will connect you with the right person on our Bay Area team.</p>
           <label>
             <span>Full name</span>
             <input type="text" name="name" required autocomplete="name">
@@ -85,18 +84,70 @@
               <option value="">Select one</option>
               <option value="buy">Buy a home</option>
               <option value="sell">Sell a home</option>
-              <option value="invest">Buy an investment property</option>
               <option value="both">Buy and sell</option>
-              <option value="other">Something else</option>
+              <option value="other">Not sure yet</option>
             </select>
           </label>
           <label>
-            <span>Market / area</span>
-            <input type="text" name="market" placeholder="City or region" autocomplete="address-level2">
+            <span>Bay Area neighborhood or city</span>
+            <input type="text" name="market" placeholder="e.g. Oakland, Noe Valley, Palo Alto" autocomplete="address-level2">
+          </label>
+          <label>
+            <span>What matters most to you?</span>
+            <select name="agent_fit">
+              <option value="">Help me decide</option>
+              <option value="data">Data and market analysis</option>
+              <option value="vision">Seeing a home's potential</option>
+              <option value="design">Layout, staging, or renovations</option>
+            </select>
           </label>
           <button type="submit" class="btn btn-primary btn-block">Get in Touch</button>
           <p class="form-disclaimer">By submitting, you agree to be contacted about your real estate inquiry.</p>
         </form>
+      </div>
+    </section>
+
+    <section class="section" id="match">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">The right fit</p>
+          <h2>Different strengths. One Bay Area team.</h2>
+          <p>Our agents come from different backgrounds — analytics, design, construction, and deep neighborhood knowledge — so you work with someone who matches how you make decisions.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <div class="feature-icon">01</div>
+            <h3>Data-driven agents</h3>
+            <p>Comps, pricing trends, and clear context so you understand the market before you make an offer or list.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">02</div>
+            <h3>Vision &amp; potential</h3>
+            <p>Help seeing what a home could become — layout, light, and long-term livability beyond the listing photos.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">03</div>
+            <h3>Layout &amp; renovations</h3>
+            <p>Guidance on floor plans, staging, and renovation scope for sellers preparing to list or buyers planning updates.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="agents-preview">
+      <div class="container">
+        <div class="section-head">
+          <h2>Meet our agents</h2>
+          <p>Serving buyers and sellers across the Bay Area. Each agent has their own profile — browse the team and reach out directly.</p>
+        </div>
+      </div>
+      <div class="agent-marquee" aria-label="Featured agents">
+        <div class="agent-marquee__track agent-grid agent-grid--preview" id="home-agent-grid"></div>
+      </div>
+      <div class="container">
+        <p class="section-cta">
+          <a href="team/index.html" class="btn btn-primary">View all agents</a>
+        </p>
       </div>
     </section>
 
@@ -105,21 +156,21 @@
         <div class="split-section">
           <div>
             <p class="eyebrow">For buyers</p>
-            <h2>Find the right property, not just any property</h2>
-            <p class="section-lead">Our agents help you evaluate neighborhoods, compare options, and move quickly when the numbers make sense.</p>
+            <h2>Find the right home, not just any home</h2>
+            <p class="section-lead">Your agent helps you compare neighborhoods, evaluate trade-offs, and move with confidence in a competitive Bay Area market.</p>
           </div>
           <div class="stack-cards">
             <article class="stack-card">
-              <h3>Clear guidance</h3>
-              <p>Understand pricing, comps, and trade-offs before you write an offer.</p>
+              <h3>Neighborhood guidance</h3>
+              <p>Local insight on schools, commute, and community — not just square footage and price.</p>
             </article>
             <article class="stack-card">
-              <h3>Investor-minded analysis</h3>
-              <p>Many Ashlar Lane agents invest themselves and bring that lens to every purchase.</p>
+              <h3>Offer strategy</h3>
+              <p>Clear advice on pricing, contingencies, and timing so you know where you stand.</p>
             </article>
             <article class="stack-card">
               <h3>Responsive support</h3>
-              <p>Fast answers on tours, offers, inspections, and closing timelines.</p>
+              <p>Fast answers on tours, inspections, and closing timelines when it matters.</p>
             </article>
           </div>
         </div>
@@ -131,83 +182,49 @@
         <div class="split-section reverse">
           <div>
             <p class="eyebrow">For sellers</p>
-            <h2>Price, market, and close with confidence</h2>
-            <p class="section-lead">From listing prep to negotiation, we help you present your property well and protect your outcome at the closing table.</p>
+            <h2>Present your home at its best</h2>
+            <p class="section-lead">From pricing to prep to negotiation, your agent helps you tell your home's story and protect your outcome at the closing table.</p>
           </div>
           <div class="stack-cards">
             <article class="stack-card">
               <h3>Pricing strategy</h3>
-              <p>Data-informed pricing based on current market conditions and buyer demand.</p>
+              <p>Data-informed pricing based on current Bay Area demand and comparable sales.</p>
             </article>
             <article class="stack-card">
-              <h3>Smooth transactions</h3>
+              <h3>Prep &amp; presentation</h3>
+              <p>Advice on staging, updates, and timing so your home shows well to the right buyers.</p>
+            </article>
+            <article class="stack-card">
+              <h3>Smooth closings</h3>
               <p>Licensed support to keep paperwork, deadlines, and communication on track.</p>
-            </article>
-            <article class="stack-card">
-              <h3>Direct communication</h3>
-              <p>No runaround. You will know where your deal stands at every step.</p>
             </article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="why">
+    <section class="section section-dark" id="why">
       <div class="container">
-        <div class="section-head">
-          <h2>Why work with Ashlar Lane?</h2>
-          <p>A modern brokerage built for clients who want substance over sales pitch.</p>
-        </div>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-icon">01</div>
-            <h3>Experienced agents</h3>
-            <p>Work with licensed professionals backed by managing brokers who know the contracts cold.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon">02</div>
-            <h3>Investor perspective</h3>
-            <p>Many of our agents buy and sell for themselves, not just on commission.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon">03</div>
-            <h3>Fast responses</h3>
-            <p>Questions answered quickly, whether you are under contract or still exploring options.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon">04</div>
-            <h3>Transparent process</h3>
-            <p>Plain-language explanations of offers, contingencies, and closing costs.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon">05</div>
-            <h3>Buy or sell</h3>
-            <p>Primary residences, relocations, flips, rentals, and off-market opportunities.</p>
-          </article>
-          <article class="feature-card">
-            <div class="feature-icon">06</div>
-            <h3>Local expertise</h3>
-            <p>Agents who know their markets and can advise on neighborhood-level nuance.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark">
-      <div class="container">
-        <div class="path-cards">
-          <article class="path-card">
-            <p class="eyebrow eyebrow-light">Buying</p>
-            <h3>Ready to search?</h3>
-            <p>Tell us your budget, timeline, and must-haves. We will match you with an agent who fits.</p>
-            <a href="#contact" class="btn btn-secondary">Start buying</a>
-          </article>
-          <article class="path-card">
-            <p class="eyebrow eyebrow-light">Selling</p>
-            <h3>Thinking about listing?</h3>
-            <p>Get a straightforward conversation about value, timing, and what to expect before you commit.</p>
-            <a href="#contact" class="btn btn-secondary">Start selling</a>
-          </article>
+        <div class="split-section">
+          <div>
+            <p class="eyebrow eyebrow-light">Why Ashlar Lane</p>
+            <h2>We know this market</h2>
+            <p class="section-lead">Ashlar Lane is built for Northern California — specifically the Bay Area. Our teammates live and work here, with backgrounds that complement each other so we can pair you with the best fit.</p>
+          </div>
+          <div class="stack-cards">
+            <article class="stack-card stack-card-dark">
+              <h3>Bay Area focused</h3>
+              <p>San Francisco, East Bay, Peninsula, South Bay, and surrounding communities.</p>
+            </article>
+            <article class="stack-card stack-card-dark">
+              <h3>Matched to you</h3>
+              <p>Not one-size-fits-all. We help you find an agent whose style fits how you buy or sell.</p>
+            </article>
+            <article class="stack-card stack-card-dark">
+              <h3>Brokerage support</h3>
+              <p>Every agent is backed by licensed managing brokers and transaction support when you need it.</p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -215,8 +232,8 @@
     <section class="section section-alt testimonial">
       <div class="container narrow">
         <blockquote>
-          <p>Our agent walked us through every line of the contract, responded within minutes, and never pushed us toward a property that did not fit. <strong>It felt like working with someone on our side of the table.</strong></p>
-          <footer>Client testimonial</footer>
+          <p>We told Ashlar Lane we wanted someone patient with first-time buyers — they paired us with an agent who explained every step and never made us feel rushed. <strong>It felt like they actually listened to what we needed.</strong></p>
+          <footer>Client testimonial · Bay Area buyer</footer>
         </blockquote>
       </div>
     </section>
@@ -228,20 +245,20 @@
         </div>
         <div class="faq-list">
           <details class="faq-item">
+            <summary>How do I choose the right agent?</summary>
+            <p>Start by browsing our <a href="team/index.html">agent directory</a>. Each profile describes their markets and strengths. If you are unsure, use the contact form and we will recommend someone on our Bay Area team.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What areas do you serve?</summary>
+            <p>We specialize in Northern California, with a focus on the Bay Area — including San Francisco, the East Bay, Peninsula, and South Bay. Ask your agent about specific neighborhoods they cover.</p>
+          </details>
+          <details class="faq-item">
             <summary>Do I pay Ashlar Lane directly?</summary>
             <p>Typically, brokerage compensation is handled through the transaction according to local custom and your agreement with your agent. Your agent can explain how fees work before you get started.</p>
           </details>
           <details class="faq-item">
-            <summary>Can you help with investment properties?</summary>
-            <p>Yes. Many Ashlar Lane agents work with buyers and sellers evaluating rentals, flips, and other investment opportunities.</p>
-          </details>
-          <details class="faq-item">
             <summary>How quickly will someone respond?</summary>
-            <p>We aim for same-day responses on new inquiries. If you are under contract, your agent and our broker support team prioritize time-sensitive questions.</p>
-          </details>
-          <details class="faq-item">
-            <summary>What areas do you serve?</summary>
-            <p>Our agents operate in multiple markets. Share your city or region in the contact form and we will connect you with the right local agent.</p>
+            <p>We aim for same-day responses on new inquiries. You can also contact an agent directly from their profile page.</p>
           </details>
           <details class="faq-item">
             <summary>I am a licensed agent. Is this page for me?</summary>
@@ -254,12 +271,12 @@
     <section class="section cta-band">
       <div class="container cta-band-inner">
         <div>
-          <h2>Ready to buy or sell?</h2>
-          <p>Connect with an Ashlar Lane agent today.</p>
+          <h2>Ready to find your agent?</h2>
+          <p>Browse our Bay Area team or tell us what you are looking for.</p>
         </div>
         <div class="cta-band-actions">
-          <a href="tel:+14155550100" class="btn btn-secondary">Call (415) 555-0100</a>
-          <a href="#contact" class="btn btn-primary">Get in Touch</a>
+          <a href="team/index.html" class="btn btn-secondary">Browse agents</a>
+          <a href="#contact" class="btn btn-primary">Get matched</a>
         </div>
       </div>
     </section>
@@ -268,8 +285,8 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img src="ashlarlane-wordmark.gif" alt="Ashlar Lane" class="logo-wordmark logo-wordmark--footer" width="160" height="32">
-        <p>Ashlar Lane is a licensed real estate brokerage serving buyers, sellers, and the agents who represent them.</p>
+        <img src="ashlarlane-wordmark.gif" alt="Ashlar Lane" class="logo-wordmark logo-wordmark--footer">
+        <p>Ashlar Lane is a Bay Area brokerage helping buyers and sellers find the right agent for their goals.</p>
       </div>
       <div>
         <h4>Contact</h4>
@@ -281,18 +298,20 @@
       <div>
         <h4>Explore</h4>
         <ul>
+          <li><a href="team/index.html">Our Agents</a></li>
           <li><a href="agents.html">For Agents</a></li>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Privacy Policy</a></li>
         </ul>
       </div>
     </div>
     <div class="container footer-bottom">
       <p>Copyright <span id="year"></span> Ashlar Lane. All rights reserved.</p>
-      <p class="footer-disclosure">DISCLOSURE: Ashlar Lane is a licensed real estate brokerage. Information on this site is not a solicitation or offer where prohibited. Contact information submitted may be used to respond to your inquiry.</p>
+      <p class="footer-disclosure">DISCLOSURE: Ashlar Lane is a licensed real estate brokerage serving Northern California. Information on this site is not a solicitation or offer where prohibited.</p>
     </div>
   </footer>
 
+  <script src="js/reveal.js"></script>
+  <script src="js/team.js"></script>
+  <script src="js/home-agents.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
