@@ -127,7 +127,7 @@
   function init() {
     document
       .querySelectorAll(
-        ".section-head, .hero-copy, .page-hero .container, .agent-profile-intro, .cta-band-inner > div:first-child"
+        ".section-head, .hero-copy, .page-hero .container, .cta-band-inner > div:first-child"
       )
       .forEach((block) => {
         const revealImmediate =
@@ -155,6 +155,7 @@
   }
 
   window.AshlarReveal = {
+    setupHeading: setupHeadingBlock,
     refreshCards(selector) {
       const grid = typeof selector === "string" ? document.querySelector(selector) : selector;
       if (!grid) return;

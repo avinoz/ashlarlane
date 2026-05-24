@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent Profile | Ashlar Lane</title>
+  <meta name="description" content="Ashlar Lane agent profile — California local, Bay Area real estate.">
+  <link rel="icon" href="../favicon-ashlar.gif" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo" aria-label="Ashlar Lane home">
+        <img src="../ashlarlane-wordmark.gif" alt="Ashlar Lane" class="logo-wordmark">
+      </a>
+      <nav class="nav-desktop" aria-label="Primary">
+        <a href="../index.html#buy">Buy</a>
+        <a href="../index.html#sell">Sell</a>
+        <a href="index.html">Our Agents</a>
+        <a href="../index.html#faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <div class="audience-nav" aria-label="Choose audience">
+          <a href="../index.html" class="active">Clients</a>
+          <a href="../agents.html">Agents</a>
+        </div>
+        <a href="tel:+14155550100" class="header-phone" id="header-phone">(415) 555-0100</a>
+        <a href="#contact-agent" class="btn btn-primary btn-sm" id="header-contact">Contact</a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="nav-mobile" aria-label="Mobile" hidden>
+      <a href="index.html">Our Agents</a>
+      <a href="#contact-agent">Contact</a>
+    </nav>
+  </header>
+
+  <main id="agent-app">
+    <article id="agent-profile" hidden>
+      <section class="agent-profile-main">
+        <div class="container">
+          <a href="index.html" class="back-link">← All agents</a>
+          <div class="agent-profile-layout">
+            <aside class="agent-profile-sidebar" id="contact-agent">
+              <img class="agent-profile-photo" id="agent-avatar" alt="" width="280" height="280">
+              <p class="agent-profile-credential">REALTOR®</p>
+              <dl class="agent-profile-facts">
+                <div>
+                  <dt>License number</dt>
+                  <dd id="agent-license"></dd>
+                </div>
+                <div>
+                  <dt>Email</dt>
+                  <dd><a href="#" id="agent-email-link"></a></dd>
+                </div>
+                <div>
+                  <dt>Primary phone</dt>
+                  <dd><a href="#" id="agent-phone-link"></a></dd>
+                </div>
+                <div>
+                  <dt>Address</dt>
+                  <dd id="agent-address"></dd>
+                </div>
+              </dl>
+            </aside>
+            <div class="agent-profile-story">
+              <h1 class="agent-profile-meet" id="agent-meet-heading"></h1>
+              <div class="agent-profile-bio" id="agent-bio"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="agent-help-section" hidden>
+        <div class="container agent-profile-content">
+          <h2>How I help clients</h2>
+          <ul class="agent-help-list" id="agent-help-list"></ul>
+        </div>
+      </section>
+
+      <section class="section" id="agent-transactions-section" hidden>
+        <div class="container agent-profile-content">
+          <h2>Recent transactions</h2>
+          <div class="agent-transactions-grid" id="agent-transactions"></div>
+          <nav class="agent-transactions-pagination" id="agent-transactions-pagination" aria-label="Transaction pages" hidden>
+            <button type="button" class="agent-transactions-page-btn" id="agent-transactions-prev" disabled>Previous</button>
+            <span class="agent-transactions-page-status" id="agent-transactions-page-status" aria-live="polite"></span>
+            <button type="button" class="agent-transactions-page-btn" id="agent-transactions-next">Next</button>
+          </nav>
+        </div>
+      </section>
+    </article>
+
+    <section class="section" id="agent-not-found" hidden>
+      <div class="container narrow">
+        <h1>Agent not found</h1>
+        <p>We could not find that profile. Browse our team to find a Bay Area agent.</p>
+        <a href="index.html" class="btn btn-primary">Browse all agents</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="../ashlarlane-wordmark.gif" alt="Ashlar Lane" class="logo-wordmark logo-wordmark--footer">
+        <p>California local · Bay Area brokerage</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#" id="footer-email"></a></li>
+          <li><a href="index.html">Browse all agents</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../agents.html">For Agents</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>Copyright <span id="year"></span> Ashlar Lane. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/team.js"></script>
+  <script src="../js/reveal.js"></script>
+  <script src="../js/team-agent.js"></script>
+  <script src="../js/main.js"></script>
+</body>
+</html>

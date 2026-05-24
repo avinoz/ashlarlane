@@ -4,8 +4,8 @@ const PREVIEW_CARD_COUNT = 8;
 function renderAgentCard(agent) {
   return `
     <article class="agent-card">
-      <a href="team/${agent.slug}.html" class="agent-card-link">
-        <div class="agent-avatar" aria-hidden="true">${agent.initials}</div>
+      <a href="${window.getAgentProfileUrl(agent.slug)}" class="agent-card-link">
+        ${window.renderAgentAvatar(agent)}
         <div class="agent-card-body">
           <h2>${agent.name}</h2>
           <p class="agent-tag">${agent.specialty}</p>

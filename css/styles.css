@@ -24,6 +24,7 @@
   --max-width: 1200px;
   --font-body: "Inter", system-ui, -apple-system, sans-serif;
   --font-display: "Montserrat", system-ui, -apple-system, sans-serif;
+  --font-serif: "Lora", Georgia, "Times New Roman", serif;
 }
 
 *,
@@ -929,10 +930,6 @@ body:has(.hero--video) .audience-nav a.active {
   .footer-grid {
     grid-template-columns: 1fr;
   }
-
-  .agent-profile-grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 /* Page hero (team directory, etc.) */
@@ -1060,24 +1057,12 @@ body:has(.hero--video) .audience-nav a.active {
 }
 
 .agent-avatar {
-  display: grid;
-  place-items: center;
-  width: 3.5rem;
-  height: 3.5rem;
-  border-radius: var(--radius);
-  background: linear-gradient(135deg, var(--accent), var(--accent-hover));
-  color: var(--white);
-  font-family: var(--font-display);
-  font-weight: 600;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-
-.agent-avatar--lg {
-  width: 5rem;
-  height: 5rem;
-  font-size: 1.25rem;
-  margin-bottom: 1.25rem;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 20%;
+  flex-shrink: 0;
 }
 
 .agent-card-body {
@@ -1132,21 +1117,209 @@ body:has(.hero--video) .audience-nav a.active {
 }
 
 /* Agent profile page */
-.agent-profile-hero {
-  padding: 3rem 0 4rem;
-  background: var(--bg-muted);
+.agent-profile-main {
+  padding: 2.5rem 0 4.5rem;
+  background: var(--white);
 }
 
-.agent-profile-grid {
+.agent-profile-layout {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr 1.4fr;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
   align-items: start;
 }
 
-.agent-profile-intro h1 {
-  font-size: clamp(1.85rem, 4vw, 2.5rem);
-  margin: 0.5rem 0 0.35rem;
+.agent-profile-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 0 0 1.75rem;
+  object-fit: cover;
+  object-position: center 20%;
+}
+
+.agent-profile-credential {
+  margin: 0 0 1.75rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.agent-profile-facts {
+  margin: 0;
+}
+
+.agent-profile-facts > div + div {
+  margin-top: 1.35rem;
+}
+
+.agent-profile-facts dt {
+  margin: 0 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.agent-profile-facts dd {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--text-secondary);
+}
+
+.agent-profile-facts a {
+  color: var(--accent);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.agent-profile-facts a:hover {
+  color: var(--accent-hover);
+}
+
+.agent-profile-meet {
+  margin: 0 0 2rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.agent-profile-bio p {
+  margin: 0 0 1.35rem;
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.agent-profile-bio p:last-child {
+  margin-bottom: 0;
+}
+
+.agent-profile-content h2 {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  margin: 0 0 1rem;
+}
+
+.agent-transactions-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.agent-transaction-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: var(--white);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 0;
+}
+
+.agent-transaction-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.agent-transaction-body {
+  padding: 1.25rem;
+}
+
+.agent-transaction-status {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.agent-transaction-status--sold {
+  background: rgba(16, 16, 17, 0.08);
+  color: var(--text-secondary);
+}
+
+.agent-transaction-status--sale {
+  background: var(--accent-soft);
+  color: var(--accent-hover);
+}
+
+.agent-transaction-street {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+  line-height: 1.3;
+}
+
+.agent-transaction-city {
+  margin: 0 0 0.65rem;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.agent-transaction-meta {
+  margin: 0 0 0.65rem;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+}
+
+.agent-transaction-price {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.agent-transactions-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: 1.75rem;
+}
+
+.agent-transactions-page-btn {
+  padding: 0.55rem 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.agent-transactions-page-btn:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.agent-transactions-page-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.agent-transactions-page-status {
+  min-width: 7rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
 }
 
 .back-link {
@@ -1176,27 +1349,38 @@ body:has(.hero--video) .audience-nav a.active {
   margin: 0;
   padding-left: 1.15rem;
   color: var(--text-secondary);
+  max-width: 68ch;
+  font-size: 1.02rem;
+  line-height: 1.65;
 }
 
 .agent-help-list li + li {
-  margin-top: 0.4rem;
-}
-
-.agent-profile-contact {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.75rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border-light);
+  margin-top: 0.5rem;
 }
 
 .agent-grid--preview .agent-card-body {
-  padding-top: 0;
+  padding-top: 1.35rem;
 }
 
 .agent-grid--preview .agent-avatar {
-  margin: 1.35rem 1.35rem 0;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .agent-profile-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .agent-profile-sidebar {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 640px) {
+  .agent-profile-sidebar {
+    max-width: none;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
