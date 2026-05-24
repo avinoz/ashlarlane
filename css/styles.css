@@ -1402,6 +1402,14 @@ body:has(.hero--video) .audience-nav a.active {
   .agent-profile-sidebar {
     max-width: 280px;
   }
+  html {
+    overflow-x: hidden !important;
+  }
+  .agent-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 640px) {
