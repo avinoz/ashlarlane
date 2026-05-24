@@ -1405,10 +1405,15 @@ body:has(.hero--video) .audience-nav a.active {
   html {
     overflow-x: hidden !important;
   }
-  .agent-grid {
+  .agent-grid:not(.agent-marquee__track) {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .agent-marquee__track {
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }
 
